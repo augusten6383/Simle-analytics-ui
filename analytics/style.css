@@ -1,0 +1,213 @@
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #D0D2D1;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid;
+    border-radius: 20px;
+    margin: 5%;
+    background-color: #ADFD16;
+    padding-left: 30px;
+    padding-top: 20px;
+    height: max-content;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    font-family: lato;
+    font-weight: 800;
+    justify-content: space-between;
+    padding: 10px;
+    padding-right: 10px
+}
+.ui-dot{
+    width: 11px;
+    margin-bottom: 1px;
+}
+.ui{
+    margin-right: 20px;
+}
+.home{
+    margin-top: 1px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 20px;
+}
+.products{
+    margin-top: -13px;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    margin-right: 20px;
+}
+.product-arrow{
+    margin-left: -4px;
+}
+.resource{
+    display: flex;
+    font-weight: 600;
+    margin-top: -13px;
+    font-size: 14px;
+    margin-right: 20px;
+}
+.resource-arrow{
+   margin-left: -5px;
+}
+.pricing{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 1px;
+    margin-right: 40px;
+}
+.login-btn{
+    cursor: pointer;
+    margin-left: auto;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 10px;
+    margin-top: -11px;
+    font-weight: 600;
+    padding-right: 30px;
+}
+.signup-btn{
+    background-color: #000100;
+    border-color: transparent;
+    color: white;
+    border-radius: 10px;
+    margin-top: -11px;
+    font-weight: 600px;
+    margin-right: 5px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 6pc;
+    font-family: lato;
+}
+.content-text{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+.content-header{
+    font-size: 45px;
+    font-weight: 900;
+    
+}
+.cont-slog{
+    margin-top: -1em;
+}
+.content-image{
+    overflow: hidden;
+    height: fit-content;
+    padding-right: -10px;
+    border: 5px solid;
+    border-right: 0;
+    border-radius: 10px 0 0 10px;
+}
+.graph-img{
+    width: 40vw;
+    border-radius: inherit;
+}
+.demo{
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 10px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+.play-demo{
+    width: 20px;
+    margin-bottom: -4px;
+}
+.cont-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.cont-btn .signup-btn{
+    height: 40px;
+    margin-top: 0;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    margin-top: 50px;
+    gap: 30px;
+}
+.zoom-icon{
+    width: inherit;
+}
+.wealth-icon{
+    width: inherit;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header span, .header p {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .login-btn, .signup-btn {
+        margin: 5px 1px;
+        padding: 10px;
+        width: auto;
+    }
+    .pricing{
+        display: none;
+    }
+    .login-btn{
+        background-color: #000100;
+        color: white;
+    }
+    .content{
+        justify-content: center;
+    }
+    .graph-img{
+        width: 70vw;
+    }
+    .wealth-icon{
+        display: none;
+    }
+}
+
+@media (max-width: 520px) {
+    .container {
+        margin: 2%;
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header span, .header p {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .login-btn, .signup-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .content-image{
+        display: none;
+    }
+    .wealth-icon{
+        display: none;
+    }
+}
